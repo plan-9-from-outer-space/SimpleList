@@ -1,7 +1,7 @@
 #include "include/list.h"
 #include "include/database.h"
 
-// int main (int argc, char** argv) {
+// int main (int argc, char ** argv) {
 int main (int argc, char * args[]) {
     List simpleList;  // Create the List object.
     Database data;
@@ -18,6 +18,6 @@ int main (int argc, char * args[]) {
         cout << "Username not supplied.. exiting the program" << endl;
     }
 
-    return 0;
+    return 125;
 }
 
