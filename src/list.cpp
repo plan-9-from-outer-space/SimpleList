@@ -14,16 +14,16 @@ void List::print_menu () {
 
     cin >> choice;
 
-    if(choice == 4) {
+    if (choice == 4) {
         exit(0);
     }
-    else if(choice == 3) {
+    else if (choice == 3) {
         delete_item();
     }
-    else if(choice == 2) {
+    else if (choice == 2) {
         add_item();
     }
-    else if(choice == 1) {
+    else if (choice == 1) {
         print_list();
     }
     else {
@@ -55,20 +55,19 @@ void List::delete_item () {
     cout << "*** Delete Item ***\n";
     cout << "Select an item index number to delete: \n";
 
-    if(list.size()) {
+    if (list.size()) {
         for(unsigned int i=0; i < list.size(); i++){
             cout << i << ": " << list[i] << "\n";
         }
         int choiceNum;
         cin >> choiceNum;
-        list.erase(list.begin()+choiceNum);
+        list.erase (list.begin() + choiceNum);
     }    
     else {
         cout << "No items in the list or to delete.\n";
     }
 
     print_menu();
-
 }
 
 void List::print_list () {
@@ -76,7 +75,7 @@ void List::print_list () {
     cout << "\n\n\n\n\n\n\n\n";
     cout << "*** Printing List ***\n";
 
-    for(unsigned int list_index=0; list_index < list.size(); list_index++) {
+    for (unsigned int list_index=0; list_index < list.size(); list_index++) {
         cout << " * " << list[list_index] << "\n";
     }
 
@@ -84,7 +83,7 @@ void List::print_list () {
     char choice;
     cin >> choice;
 
-    if(choice == 'M' || choice == 'm') {
+    if (choice == 'M' || choice == 'm') {
         print_menu();
     }
     else {
