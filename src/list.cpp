@@ -1,7 +1,5 @@
 #include "include/list.h"
 
-// using std::cout, std::cin, std::endl, std::string, std::vector;
-
 void List::print_menu () {
     int choice;
 
@@ -15,7 +13,8 @@ void List::print_menu () {
     cin >> choice;
 
     if (choice == 4) {
-        exit(0);
+        // exit(0);
+        return;  // void
     }
     else if (choice == 3) {
         delete_item();

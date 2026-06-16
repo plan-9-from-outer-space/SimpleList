@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-using std::cout, std::cin, std::endl, std::string, std::vector;
+using namespace std;
 
 class List {
     private:

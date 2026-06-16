@@ -1,15 +1,18 @@
 #include "include/list.h"
-
-// using std::cout, std::cin, std::endl, std::string, std::vector;
+#include "include/database.h"
 
 // int main (int argc, char** argv) {
 int main (int argc, char * args[]) {
+    List simpleList;  // Create the List object.
+    Database data;
 
     if (argc > 1) {
-        List simpleList;  // Create the List object.
+        
         cout << "Hello from main.cpp" << endl;
         simpleList.name = string (args[1]);
+        data.read ();
         simpleList.print_menu ();
+        // data.write (simpleList.list);
     }
     else {
         cout << "Username not supplied.. exiting the program" << endl;
