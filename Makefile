@@ -2,7 +2,7 @@
 ####################### Makefile Template ##############################
 ########################################################################
 
-# Compiler settings - Can be customized.
+# Compiler settings - Can be customized..
 CC = g++
 CXXFLAGS = -std=c++17 -Wall
 LDFLAGS = 
